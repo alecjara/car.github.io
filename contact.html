@@ -33,6 +33,35 @@
     </header>
 
     <main>
+        <form action="https://formspree.io/f/mleadjye" method="POST">
+				<!-- fieldset is used to group several controls as well as labels within a web form -->
+				<fieldset>
+					<!-- legend represents a caption for the content of its parent fieldset -->
+					<legend>Your Details:</legend>
+					<div>
+						<!-- the label element is visually AND programmatically associated with its corresponding text
+               input using the 'for' attribute -->
+						<label for="firstname">First Name:</label>
+						<!-- name attribute is used for javascript, how we send our data to the back end
+          I could show the example from the url-->
+						<input type="text" name="firstName" id="firstname" maxlength="30" />
+					</div>
+					<div>
+						<label for="surname">Surname:</label>
+						<input type="text" name="lastname" id="surname" maxlength="50" />
+					</div>
+					<!-- name repesents the name of the associated data point submitted to the server -->
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="e-mail" id="email" />
+					</div>
+                    <div class="submit">
+					    <button type="submit" class="btn-submit">Contact us</button>
+				    </div>
+
+					
+				</fieldset>
+                </form>
 
     </main>
 

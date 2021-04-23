@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* same for all the pages */
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     background-image: url(./img/car.jpg);
@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 header {
@@ -53,6 +53,8 @@ aside {
     position: relative;
 }
 
+/* make appointment */
+
 .app {
     position: fixed;
     top: 75%;
@@ -73,7 +75,7 @@ aside {
     width: 50%;
     margin: 0 auto;
     font-size: 1.5rem;
-    margin-top: 7rem;
+    margin-top: 9rem;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     text-shadow: 2px 2px 5px #000;
@@ -90,7 +92,7 @@ ul li {
 }
 
 
-/* products  */
+/* products page  */
 
 figure img {
     width: 100%;
@@ -98,10 +100,66 @@ figure img {
 }
 
 
-/* contact  */
+/* contact page */
+
+form {
+  
+  max-width: 25%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  color: white;
+  
+}
+
+legend {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.6rem;
+}
+
+label {
+  display: inline-block;
+  width: 18rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+fieldset {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 8px 5px;
+  width: 85%;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+button {
+  width: 85%;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  outline: none;
+  color: #efefef;
+  background-color: rgba(75, 111, 218, 0.719);
+  margin: 1rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+}
+
+
 
 footer {
     position: relative;
+}
+
+i {
+    color: white;
 }
 
 .icons {
@@ -115,7 +173,8 @@ footer {
     
 }
 
+  
 .space:hover {
-    color: white;
+    color: rgba(75, 111, 218, 0.719);
 }
 
