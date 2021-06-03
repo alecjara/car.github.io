@@ -53,12 +53,12 @@ aside {
     position: relative;
 }
 
-/* make appointment */
+/* make appointment button */
 
 .app {
     position: fixed;
-    top: 75%;
-    left: 35%;
+    top: 25%;
+    left: 5%;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -68,6 +68,10 @@ aside {
     border-radius: 10px;
 }
 
+.app:hover {
+    background-color: rgb(163, 158, 158);
+    color: black;
+}
 /* services */
 
 #services {
@@ -106,7 +110,7 @@ form {
   
   max-width: 25%;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 5rem;
   color: white;
   
 }
@@ -122,10 +126,11 @@ label {
   width: 18rem;
   padding: 0.5rem;
   margin-left: 1rem;
+  font-weight: lighter;
 }
 
 fieldset {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   margin: 1.5rem 0;
   padding: 1.5rem;
 }
@@ -148,8 +153,13 @@ button {
   margin: 1rem 1rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: 0.4s;
+  /* transition: 0.4s; */
   border: none;
+}
+
+button:hover {
+    background-color: rgb(38, 63, 136);
+    font-weight: bolder;
 }
 
 
@@ -175,6 +185,6 @@ i {
 
   
 .space:hover {
-    color: rgba(75, 111, 218, 0.719);
+    color:  rgb(163, 158, 158);
 }
 
