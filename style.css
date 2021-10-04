@@ -1,190 +1,321 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-/* same for all the pages */
-body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    background-image: url(./img/car.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    background-attachment: fixed;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-header {
-    position: relative;
+/* same for all the pages */
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	background-image: url(./img/car.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	background-attachment: fixed;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: inline-block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: inline-block;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style-type: none;
+	display: inline-block;
+	list-style-type: none;
 }
 
 nav ul li a {
-    padding: 1rem;
-    display: block;
-    color: white;
-    text-decoration: none;
+	padding: 1rem;
+	display: block;
+	color: white;
+	text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: rgb(163, 158, 158);
-    color: black;
+	background-color: rgb(163, 158, 158);
+	color: black;
 }
 
 .car-icon {
-    color: white;
-    position: absolute;
-    top: 0.5rem;
-    right: 2%;
+	color: white;
+	position: absolute;
+	top: 0.5rem;
+	right: 2%;
 }
 
 aside {
-    position: relative;
+	position: relative;
 }
 
 /* make appointment button */
 
 .app {
-    position: fixed;
-    top: 25%;
-    left: 5%;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    padding: 1em;
-    border-radius: 10px;
+	position: fixed;
+	top: 25%;
+	left: 5%;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	padding: 1em;
+	border-radius: 10px;
 }
 
 .app:hover {
-    background-color: rgb(163, 158, 158);
-    color: black;
+	background-color: rgb(163, 158, 158);
+	color: black;
 }
 /* services */
 
 #services {
-    
-    width: 50%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    margin-top: 9rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-shadow: 2px 2px 5px #000;
-    padding-left: 1rem;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	margin-top: 9rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	text-shadow: 2px 2px 5px #000;
+	padding-left: 1rem;
 }
 
 .service-ul {
-    padding-top: 2rem;
-
+	padding-top: 2rem;
 }
 
 ul li {
-    list-style-type: none;
+	list-style-type: none;
 }
-
 
 /* products page  */
 
 figure img {
-    width: 100%;
-    object-fit: scale-down;
+	width: 100%;
+	object-fit: scale-down;
 }
 
+.change-car {
+	object-fit: cover;
+}
 
 /* contact page */
 
 form {
-  
-  max-width: 25%;
-  margin: 0 auto;
-  margin-top: 5rem;
-  color: white;
-  
+	max-width: 25%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	color: white;
 }
 
 legend {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: white;
-  padding: 0.6rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: white;
+	padding: 0.6rem;
 }
 
 label {
-  display: inline-block;
-  width: 18rem;
-  padding: 0.5rem;
-  margin-left: 1rem;
-  font-weight: lighter;
+	display: inline-block;
+	width: 18rem;
+	padding: 0.5rem;
+	margin-left: 1rem;
+	font-weight: lighter;
 }
 
 fieldset {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 1.5rem 0;
-  padding: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin: 1.5rem 0;
+	padding: 1.5rem;
 }
 
 input[type="text"],
 input[type="email"] {
-  padding: 8px 5px;
-  width: 85%;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+	padding: 8px 5px;
+	width: 85%;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
 }
 
 button {
-  width: 85%;
-  padding: 0.8rem;
-  border-radius: 0.8rem;
-  outline: none;
-  color: #efefef;
-  background-color: rgba(75, 111, 218, 0.719);
-  margin: 1rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  /* transition: 0.4s; */
-  border: none;
+	width: 85%;
+	padding: 0.8rem;
+	border-radius: 0.8rem;
+	outline: none;
+	color: #efefef;
+	background-color: rgba(75, 111, 218, 0.719);
+	margin: 1rem 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	/* transition: 0.4s; */
+	border: none;
 }
 
 button:hover {
-    background-color: rgb(38, 63, 136);
-    font-weight: bolder;
+	background-color: rgb(38, 63, 136);
+	font-weight: bolder;
 }
 
-
-
 footer {
-    position: relative;
+	position: relative;
 }
 
 i {
-    color: white;
+	color: white;
 }
 
 .icons {
-    position: fixed;
-    top: 87%;
-    left: 45%;
+	position: fixed;
+	top: 87%;
+	left: 45%;
+}
+.icons a {
+	text-decoration: none;
 }
 
 .space {
-    padding-right: 3rem;
-    
+	padding-right: 3rem;
 }
 
-  
 .space:hover {
-    color:  rgb(163, 158, 158);
+	color: rgb(163, 158, 158);
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body {
+		max-height: 100%;
+		background-color: black;
+	}
+
+	.app {
+		position: fixed;
+		top: 50%;
+		left: 25%;
+		padding: 0.5em;
+	}
+
+	#services {
+		width: 50%;
+		margin: 9rem auto;
+		font-size: 1.3rem;
+		line-height: 150%;
+	}
+
+	form {
+		margin: 20%;
+	}
+
+	.icons {
+		position: fixed;
+		top: 87%;
+		left: 30%;
+		font-size: 1em;
+	}
+
+	.car-icon {
+		font-size: 2em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	body {
+		max-height: 100%;
+		background-color: black;
+	}
+
+	.app {
+		position: fixed;
+		top: 50%;
+		left: 25%;
+		padding: 0.5em;
+	}
+
+	#services {
+		width: 50%;
+		margin: 9rem auto;
+		font-size: 1.3rem;
+		line-height: 150%;
+	}
+
+	form {
+		margin: 20%;
+	}
+
+	.icons {
+		position: fixed;
+		top: 87%;
+		left: 30%;
+		font-size: 1em;
+	}
+
+	.car-icon {
+		font-size: 2em;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body {
+		max-height: 100%;
+		background-color: black;
+	}
+
+	.app {
+		position: fixed;
+		top: 55%;
+		left: 35%;
+		padding: 0.5em;
+	}
+
+	#services {
+		width: 50%;
+		margin: 9rem auto;
+		font-size: 1.3rem;
+		line-height: 150%;
+	}
+
+	form {
+		margin-top: 15%;
+		margin-left: 35%;
+	}
+
+	.icons {
+		position: fixed;
+		top: 87%;
+		left: 38%;
+		font-size: 1.2em;
+	}
+
+	.car-icon {
+		font-size: 2.5em;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.app {
+		position: fixed;
+		top: 65%;
+		left: 35%;
+		padding: 0.5em;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.app {
+		position: fixed;
+		top: 25%;
+		left: 5%;
+		padding: 1em;
+	}
+
+	form {
+		margin-top: 10%;
+		margin-left: 35%;
+	}
+}
